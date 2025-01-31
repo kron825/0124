@@ -22,7 +22,32 @@
             margin-left: 2.5%;
             margin-right: 2.5%;
         }
+        .photo{
+            text-align: center;
+        }
+        .fill{
+            margin: 16px auto;
+            text-align: center;
+            text-align: left;
+	        display: inline-block;
+        }
+        ul{
+            background-color: rgb(245, 250, 215);
+        }
+        @media (max-width: 767px) {
+            ul{
+                flex-wrap: wrap;
+            }
+            .main{
+                padding: 0 4%;
+            }
+        }
     </style>
+    <script>
+        for(let i=1;i<=31;i++){
+            "文章ダミー"
+        }
+    </script>
 </head>
 <body>
     <main>
@@ -33,20 +58,29 @@
             </li>
             <li>
                 <div class="box"></div>
-                <p>テキスト1</p>
+                <p>テキスト2</p>
             </li>
             <li>
                 <div class="box"></div>
-                <p>テキスト1</p>
+                <p>テキスト3</p>
             </li>
             <li>
                 <div class="box"></div>
-                <p>テキスト1</p>
+                <p>テキスト4</p>
             </li>
-
         </ul>
-    </main>
-    <img src="img/kapi.webp" alt="">
+        <div>
 
+        </div>
+        <div class="photo">
+            <p><img src="img/kapi.webp"></p>
+            <p class="fill">
+                お名前：<input type="text"><br/>
+                返信を希望する方はチェックしてください：<input type="checkbox"><br/>
+                メッセージ：<br/><textarea rows="7" cols="85"></textarea><br/>
+                <button>送信する</button>
+            </p>
+        </div>
+    </main>
 </body>
 </html>
